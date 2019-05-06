@@ -92,6 +92,7 @@ class HomeController extends Controller
             ->limit(3)
             ->get();
         return view('pages.index',$data);
+        
     }
     public function menu()
     {

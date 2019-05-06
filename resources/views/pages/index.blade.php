@@ -484,14 +484,12 @@
                                 $m2=date('m');
                                 $d1=date('d', strtotime($row->date));
                                 $d2=date('d');
-                                if($y1>=$y2){
-                                    if($m1>=$m2){
-                                        if($d1>=$d2){
-                                            if($d0 > $d1){
-                                                $d0 = $d1;
-                                                $raw = $row;
-                                            }
-                                        }
+                                if(($y1>=$y2)&&($m1>=$m2)&&($d1>=$d2)){
+                                    $d0 = $d1;
+                                    $raw = $row;
+                                }else{
+                                    foreach($raw as $raw1){
+                                    $raw = $raw1;
                                     }
                                 }
                             }

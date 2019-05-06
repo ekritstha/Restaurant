@@ -16,7 +16,7 @@
             {{Form::text('cname','',['class' =>'form-control','placeholder'=>'Name of the Customer'])}}
         </div>
         <div class="form-group">
-            {{Form::label('souce','Source')}}
+            {{Form::label('source','Source')}}
             {{Form::text('source','',['class' =>'form-control','placeholder'=>'Source taken from'])}}
         </div>
         {{Form::submit('Submit',['class'=>'btn btn-primary'])}}
